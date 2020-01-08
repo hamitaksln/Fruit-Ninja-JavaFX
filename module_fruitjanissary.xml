@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_fruitjanissary" default="compile.module.fruitjanissary">
+  <dirname property="module.fruitjanissary.basedir" file="${ant.file.module_fruitjanissary}"/>
+  
+  <property name="module.jdk.home.fruitjanissary" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.fruitjanissary" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.fruitjanissary" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.fruitjanissary" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="fruitjanissary.output.dir" value="${module.fruitjanissary.basedir}/out/production/FruitJanissary"/>
+  <property name="fruitjanissary.testoutput.dir" value="${module.fruitjanissary.basedir}/out/test/FruitJanissary"/>
+  
+  <path id="fruitjanissary.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="fruitjanissary.module.production.classpath">
+    <path refid="${module.jdk.classpath.fruitjanissary}"/>
+  </path>
+  
+  <path id="fruitjanissary.runtime.production.module.classpath">
+    <pathelement location="${fruitjanissary.output.dir}"/>
+  </path>
+  
+  <path id="fruitjanissary.module.classpath">
+    <path refid="${module.jdk.classpath.fruitjanissary}"/>
+    <pathelement location="${fruitjanissary.output.dir}"/>
+  </path>
+  
+  <path id="fruitjanissary.runtime.module.classpath">
+    <pathelement location="${fruitjanissary.testoutput.dir}"/>
+    <pathelement location="${fruitjanissary.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.fruitjanissary">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.fruitjanissary">
+    <patternset refid="excluded.from.module.fruitjanissary"/>
+  </patternset>
+  
+  <path id="fruitjanissary.module.sourcepath">
+    <dirset dir="${module.fruitjanissary.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.fruitjanissary" depends="compile.module.fruitjanissary.production,compile.module.fruitjanissary.tests" description="Compile module FruitJanissary"/>
+  
+  <target name="compile.module.fruitjanissary.production" depends="register.custom.compilers" description="Compile module FruitJanissary; production classes">
+    <mkdir dir="${fruitjanissary.output.dir}"/>
+    <javac2 destdir="${fruitjanissary.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.fruitjanissary}/javac">
+      <compilerarg line="${compiler.args.fruitjanissary}"/>
+      <bootclasspath refid="fruitjanissary.module.bootclasspath"/>
+      <classpath refid="fruitjanissary.module.production.classpath"/>
+      <src refid="fruitjanissary.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.fruitjanissary"/>
+    </javac2>
+    
+    <copy todir="${fruitjanissary.output.dir}">
+      <fileset dir="${module.fruitjanissary.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.fruitjanissary.tests" depends="register.custom.compilers,compile.module.fruitjanissary.production" description="compile module FruitJanissary; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.fruitjanissary" description="cleanup module">
+    <delete dir="${fruitjanissary.output.dir}"/>
+    <delete dir="${fruitjanissary.testoutput.dir}"/>
+  </target>
+</project>

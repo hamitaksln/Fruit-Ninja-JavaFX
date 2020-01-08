@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="FruitJanissary">
+    <output-path>$PROJECT_DIR$/out/artifacts/FruitJanissary</output-path>
+    <root id="root">
+      <element id="archive" name="FruitJanissary.jar">
+        <element id="module-output" name="FruitJanissary" />
+      </element>
+    </root>
+  </artifact>
+</component>
