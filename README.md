@@ -2,6 +2,10 @@
 <div align="left"><h2>This game is developed by using JavaFX. All assets are made by us.</h2><div>
 
 <div align="center">
+<h2>Youtube Video</h2>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=-KjawtLL52M
+" target="_blank"><img src="https://i.ibb.co/7yxTCKb/github-Youtube-Back.jpg" width="560" height="315" 
+alt="Fruit Ninja JavaFX" /></a>
 <img src="https://i.ibb.co/cC8GjBx/login.png">
 <img src="https://i.ibb.co/GsgDrSD/register.png">
 <img src="https://i.ibb.co/r6CxwGq/highscores.png">
