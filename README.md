@@ -4,7 +4,8 @@
 <div align="center">
 <h2>Youtube Video</h2>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=-KjawtLL52M
-" target="_blank"><img src="https://i.ibb.co/7yxTCKb/github-Youtube-Back.jpg" width="560" height="315" 
+" target="_blank"><img src="https://i.ibb.co/k95ZyMn/youtube-Back.jpg" 
+width="720" height="405"
 alt="Fruit Ninja JavaFX" /></a>
 <img src="https://i.ibb.co/cC8GjBx/login.png">
 <img src="https://i.ibb.co/GsgDrSD/register.png">
