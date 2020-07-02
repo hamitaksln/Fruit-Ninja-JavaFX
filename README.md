@@ -4,15 +4,15 @@
 <div align="center">
 <h2>Youtube Video</h2>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=-KjawtLL52M
-" target="_blank"><img src="https://i.ibb.co/k95ZyMn/youtube-Back.jpg" 
+" target="_blank"><img src="https://github.com/hamitaksln/Fruit-Ninja-JavaFX/blob/master/screenshots/thumb.jpg" 
 width="720" height="405"
 alt="Fruit Ninja JavaFX" /></a>
-<img src="https://i.ibb.co/cC8GjBx/login.png">
-<img src="https://i.ibb.co/GsgDrSD/register.png">
-<img src="https://i.ibb.co/r6CxwGq/highscores.png">
-<img src="https://i.ibb.co/Hx3TV1N/help.png">
-<img src="https://i.ibb.co/ZxhH53j/credits.png">
-<img src="https://i.ibb.co/FJtcs4n/cut.png">
-<img src="https://i.ibb.co/6mwJQ46/bomb.png">
-<img src="https://i.ibb.co/26hgYxP/gameover.png">
+<img src="https://github.com/hamitaksln/Fruit-Ninja-JavaFX/blob/master/screenshots/login.PNG">
+<img src="https://github.com/hamitaksln/Fruit-Ninja-JavaFX/blob/master/screenshots/register.PNG">
+<img src="https://github.com/hamitaksln/Fruit-Ninja-JavaFX/blob/master/screenshots/highscores.PNG">
+<img src="https://github.com/hamitaksln/Fruit-Ninja-JavaFX/blob/master/screenshots/help.PNG">
+<img src="https://github.com/hamitaksln/Fruit-Ninja-JavaFX/blob/master/screenshots/credits.PNG">
+<img src="https://github.com/hamitaksln/Fruit-Ninja-JavaFX/blob/master/screenshots/cut.PNG">
+<img src="https://github.com/hamitaksln/Fruit-Ninja-JavaFX/blob/master/screenshots/bomb.PNG">
+<img src="https://github.com/hamitaksln/Fruit-Ninja-JavaFX/blob/master/screenshots/gameover.PNG">
 </div>
